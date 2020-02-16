@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notebook Rendering</title>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css'/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js'></script>    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/prism.min.js' data-manual></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-python.min.js' data-manual></script>
+
+    <script src="lib/VSS.SDK.min.js"></script> 
+    <script src="scripts/nbv.js"></script>
+    <script src="scripts/nbrender.js"></script>
+</head>
+<body style="overflow-y: scroll">
+    <div id="render-content-display">        
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/notebook.css">
+        <nav id="menubar" class="navbar navbar-default navbar-fixed-top" data-spy="affix">
+            <div class="container">
+                <div class="navbar-header">
+                <a class="navbar-brand" href="https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.ipynb-renderer" target="_blank">
+                    <img src="images/vsts_extension_logo.png" title="Vote for our app!" height="60">
+                </a>
+                </div>
+        
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="active" href="http://jupyter.org">JUPYTER</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+        <div class="container container-main">
+            <div id="notebook-display"></div>
+        </div>
+    </div>
+</body>
+</html>

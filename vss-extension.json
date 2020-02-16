@@ -1,0 +1,95 @@
+{
+    "manifestVersion": 1,
+    "id": "ipynb-renderer",
+    "version": "1.5.2",
+    "name": "Jupyter Notebook Renderer",
+    "description": "Jupyter Notebook Renderer",
+    "publisher": "ms-air-aiagility",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "images/logo.png"
+    },
+    "galleryFlags": [
+        "Public"
+    ],
+    "contributions": [
+        {
+            "id": "ipynb_renderer",
+            "type": "ms.vss-code-web.content-renderer",
+            "description": "The collection of registered content renderers which each display file content for particular file types",
+            "targets": [
+                "ms.vss-code-web.content-renderer-collection"
+            ],
+            "properties": {
+                "uri": "nbrender.html",
+                "fileExtensions": [
+                    "ipynb"
+                ],
+                "mimeTypes": [
+                    "text/html"
+                ],
+                "defaultBehavior": "showRenderedContent",
+                "registeredObjectId": "ipynb_renderer"
+            }
+        }
+    ],
+    "scopes": [
+        "vso.code"
+    ],
+    "categories": [
+        "Code"
+    ],
+    "tags": [
+        "Jupyter",
+        "Notebook",
+        "ipynb",
+        "render",
+        "preview"
+    ],
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/Azure/ipynb-renderer"
+    },
+    "content": {
+        "details": {
+            "path": "marketplace/overview.md"
+        },
+        "changelog": {
+            "path": "marketplace/changelog.md"
+        },
+        "license": {
+            "path": "marketplace/license.md"
+        }
+    },
+    "files": [
+        {
+            "path": "nbrender.html",
+            "addressable": true
+        },
+        {
+            "path": "css",
+            "addressable": true
+        },
+        {
+            "path": "scripts",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib", 
+            "addressable": true,
+            "packagePath": "lib"
+        },
+        {
+            "path": "images",
+            "addressable": true
+        },
+        {
+            "path": "marketplace",
+            "addressable": true
+        }
+    ]
+}

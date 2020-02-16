@@ -1,3 +1,12 @@
+# Azure Devops Extension: Jupyter Notebook Renderer
+
+This repo contains source codes to [Jupyter Notebook Renderer Extension for Azure Devops](https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.ipynb-renderer)
+
+## Build Locally
+
+1. Install TFX cross platform command line interface (CLI): `npm i -g tfx-cli`
+
+2. Run `tfx extension create --manifest-globs vss-extension.json`
 
 # Contributing
 

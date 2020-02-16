@@ -1,0 +1,21 @@
+{
+  "name": "ipynb-renderer",
+  "version": "1.3.1",
+  "description": "Jupyter Notebook Renderer",
+  "main": "nbrender.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Jupyter",
+    "Notebook",
+    "ipynb",
+    "render",
+    "preview"
+  ],
+  "author": "ms-air-aiagility",
+  "license": "MIT",
+  "dependencies": {
+    "vss-web-extension-sdk": "^5.141.0"
+  }
+}
