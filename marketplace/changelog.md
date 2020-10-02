@@ -10,7 +10,7 @@
 * Fix a dependency bug which causes installation failure on TFS 2017
 
 ## [1.3.1] (2019.03.25)
-* Change the extensioin scopes from code_write to code, as it only needs to read the ipynb files. 
+* Change the extension scopes from code_write to code, as it only needs to read the ipynb files. 
 * Improve the exception handling. Will show friendly message when fails to render
 * Support text/markdown rendering
 
